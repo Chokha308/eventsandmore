@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Your Event Partner</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <header>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <h1>Our Work Gallery</h1>
+        <div class="gallery-grid">
+            <img src="images/image1.jpg" alt="Event Image 1" onclick="openLightbox();currentSlide(1)">
+            <img src="images/image2.jpg" alt="Event Image 2" onclick="openLightbox();currentSlide(2)">
+            <img src="images/image3.jpg" alt="Event Image 3" onclick="openLightbox();currentSlide(3)">
+            <img src="images/image4.jpg" alt="Event Image 4" onclick="openLightbox();currentSlide(4)">
+        </div>
+    </section>
+
+   <!-- Lightbox Modal -->
+<div id="lightboxModal" class="lightbox-modal">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <div class="lightbox-content">
+        <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
+        <img id="lightboxImage" src="" alt="Large Image">
+        <span class="next" onclick="changeSlide(1)">&#10095;</span>
+    </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Your Event Partner. All rights reserved.</p>
+        <p>Contact us: +995 555-52-15-52 | info@eventpartner.com</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/HB.js"></script>
+
+</body>
+</html>
